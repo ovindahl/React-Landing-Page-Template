@@ -3,10 +3,9 @@ export const Services = (props) => {
     <div id='services' className='text-center'>
       <div className='container'>
         <div className='section-title'>
-          <h2>Our Services</h2>
+          <h2>Hvorfor velge Holdingservice?</h2>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit duis sed
-            dapibus leonec.
+            Gjennom å kun betjene holdingselskaper kan vi tilby både høy kvalitet og effektiv drift.
           </p>
         </div>
         <div className='row'>

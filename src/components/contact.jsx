@@ -4,10 +4,13 @@ import emailjs from 'emailjs-com'
 const initialState = {
   name: '',
   email: '',
+  company: '',
   message: '',
 }
 export const Contact = (props) => {
-  const [{ name, email, message }, setState] = useState(initialState)
+  const [{ name, email, company, message }, setState] = useState(initialState)
+
+  const [isSubmitted, setState2] = useState(false)
 
   const handleChange = (e) => {
     const { name, value } = e.target
@@ -15,23 +18,18 @@ export const Contact = (props) => {
   }
   const clearState = () => setState({ ...initialState })
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async e => {
     e.preventDefault()
-    console.log(name, email, message)
-    emailjs
-      .sendForm(
-        'YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', e.target, 'YOUR_USER_ID'
-      )
-      .then(
-        (result) => {
-          console.log(result.text)
-          clearState()
-        },
-        (error) => {
-          console.log(error.text)
-        }
-      )
+
+    console.log({name, email, company, message})
+    let response = await fetch("https://holdingservice.appspot.com/api/userSignup", {method: "POST", headers: {'Content-Type': 'application/json'}, body: JSON.stringify( {name, email, company, message} )} )
+    let parsedResponse = await response.json()
+    console.log({parsedResponse})
+    
+    setState2(true)
+
   }
+
   return (
     <div>
       <div id='contact'>
@@ -39,13 +37,12 @@ export const Contact = (props) => {
           <div className='col-md-8'>
             <div className='row'>
               <div className='section-title'>
-                <h2>Get In Touch</h2>
-                <p>
-                  Please fill out the form below to send us an email and we will
-                  get back to you as soon as possible.
-                </p>
+                <h2>{isSubmitted ? "Takk!" : "Bli kunde"} </h2>
+                <p>{isSubmitted ? "Vi kommer tilbake til deg snart." : "Fyll ut skjemaet for å bli kunde, så kommer vi tilbake til deg så raskt som mulig."}</p>
               </div>
-              <form name='sentMessage' validate onSubmit={handleSubmit}>
+              {isSubmitted 
+                ? <div></div>
+                : <form name='sentMessage' onSubmit={handleSubmit}>
                 <div className='row'>
                   <div className='col-md-6'>
                     <div className='form-group'>
@@ -54,7 +51,7 @@ export const Contact = (props) => {
                         id='name'
                         name='name'
                         className='form-control'
-                        placeholder='Name'
+                        placeholder='Navn'
                         required
                         onChange={handleChange}
                       />
@@ -68,7 +65,7 @@ export const Contact = (props) => {
                         id='email'
                         name='email'
                         className='form-control'
-                        placeholder='Email'
+                        placeholder='Epost'
                         required
                         onChange={handleChange}
                       />
@@ -78,11 +75,22 @@ export const Contact = (props) => {
                 </div>
                 <div className='form-group'>
                   <textarea
+                    name='company'
+                    id='company'
+                    className='form-control'
+                    rows='1'
+                    placeholder='Selskapsnavn eller organisasjonsnummer (valgfritt)'
+                    onChange={handleChange}
+                  ></textarea>
+                  <p className='help-block text-danger'></p>
+                </div>
+                <div className='form-group'>
+                  <textarea
                     name='message'
                     id='message'
                     className='form-control'
                     rows='4'
-                    placeholder='Message'
+                    placeholder='Melding'
                     required
                     onChange={handleChange}
                   ></textarea>
@@ -90,28 +98,16 @@ export const Contact = (props) => {
                 </div>
                 <div id='success'></div>
                 <button type='submit' className='btn btn-custom btn-lg'>
-                  Send Message
+                  Send
                 </button>
-              </form>
+              </form>}
             </div>
           </div>
           <div className='col-md-3 col-md-offset-1 contact-info'>
             <div className='contact-item'>
-              <h3>Contact Info</h3>
-              <p>
-                <span>
-                  <i className='fa fa-map-marker'></i> Address
-                </span>
-                {props.data ? props.data.address : 'loading'}
-              </p>
-            </div>
-            <div className='contact-item'>
-              <p>
-                <span>
-                  <i className='fa fa-phone'></i> Phone
-                </span>{' '}
-                {props.data ? props.data.phone : 'loading'}
-              </p>
+              <h3>Kontaktinfo</h3>
+              <p>Holdingservice AS</p>
+              <p>Org.nr: 924777338 </p>
             </div>
             <div className='contact-item'>
               <p>
@@ -133,12 +129,7 @@ export const Contact = (props) => {
                   </li>
                   <li>
                     <a href={props.data ? props.data.twitter : '/'}>
-                      <i className='fa fa-twitter'></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href={props.data ? props.data.youtube : '/'}>
-                      <i className='fa fa-youtube'></i>
+                      <i className='fa fa-linkedin'></i>
                     </a>
                   </li>
                 </ul>
@@ -150,10 +141,7 @@ export const Contact = (props) => {
       <div id='footer'>
         <div className='container text-center'>
           <p>
-            &copy; 2020 Issaaf Kattan React Land Page Template. Design by{' '}
-            <a href='http://www.templatewire.com' rel='nofollow'>
-              TemplateWire
-            </a>
+            &copy; 2021 Holdingservice AS.
           </p>
         </div>
       </div>

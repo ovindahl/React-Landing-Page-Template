@@ -1,61 +1,54 @@
 {
     "Header": {
-
-        "title": "We are a Landing Page",
-        "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sed commodo nibh ante facilisis bibendum."
-
+        "title": "Holdingselskap?",
+        "paragraph": "Holdingservice er en ny nisjeaktør som tilbyr enkel, effektiv og bekymringsfri administrasjon av enkle holdingselskaper"
     },
+    "Features": [{
+            "icon": "fa fa-comments-o",
+            "title": "Regnskap",
+            "text": "Årsregnskap, skattemelding, næringsoppgave, etc"
+        },
+        {
+            "icon": "fa fa-bullhorn",
+            "title": "Skatt",
+            "text": "Gevinst- og tapsberergning for verdipapirer, utbytteskatt, formuesskatt"
+        },
+        {
+            "icon": "fa fa-group",
+            "title": "Uttak og innskudd av kapital",
+            "text": "Emisjoner, utbytte, aksjonærlån"
+        },
+        {
+            "icon": "fa fa-magic",
+            "title": "Styre og generalforsamling",
+            "text": "Forberedelse, gjennomføring og oppbevaring av protokoller"
+        }
+    ],
     "About": {
-        "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-        "Why": [
-            "Lorem ipsum dolor",
-            "Tempor incididunt",
-            "Lorem ipsum dolor",
-            "Incididunt ut labore"
-        ],
-        "Why2": [
-            "Aliquip ex ea commodo",
-            "Lorem ipsum dolor",
-            "Exercitation ullamco",
-            "Lorem ipsum dolor"
-        ]
+        "paragraph1": "Holdingselskaper står overfor andre problemstillinger enn selskaper i ordinær drift. Det er ofte få transaksjoner, men disse er gjerne mer skattemessig og selskapsrettslig komplekse. Holdingselskapet er gjerne eid av en privatperson med en betydelig andel av sin formue plassert i selskapet, og det er derfor svært viktig at alt av rapportering og administrasjon gjøres korrekt, og at det tas gode valg for innskudd og uttak av kapital, kjøp og salg av investeringer mm. Eksisterende tilbydere i markedet er i liten grad satt opp for å betjene holdingselskaper effektivt, verken på system- eller rådgivningssiden. Mange opplever derfor at det er uforholdsmessig vanskelig og/eller dyrt å få tilstrekkelig grad av kontroll.",
+        "paragraph2": "Holdingservice er etablert for å løse dette problemet. Gjennom å utelukkende jobbe med holdingselskaper kan vi bygge spisskompetanse på de relevante skattemessige og selskapsrettslige problemstillingene samtidig som vi kan lage strømlinjeformede operasjonelle prosesser for administrasjon. "
     },
     "Services": [{
             "icon": "fa fa-wordpress",
-            "name": "Lorem ipsum dolor",
-            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
+            "name": "Høyt faglig nivå",
+            "text": "Spisskompetanse på skatt, regnskap og selskapsrett for holdingselskaper"
         },
         {
             "icon": "fa fa-cart-arrow-down",
-            "name": "Consectetur adipiscing",
-            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
+            "name": "Integrert teknologiplattform",
+            "text": "Vår egenutviklede IT-løsning samler alt på ett sted og integrerer direkte mot Altinn for rapportering"
         },
         {
             "icon": "fa fa-cloud-download",
-            "name": "Lorem ipsum dolor",
-            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
-        },
-        {
-            "icon": "fa fa-language",
-            "name": "Consectetur adipiscing",
-            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
-        },
-        {
-            "icon": "fa fa-plane",
-            "name": "Lorem ipsum dolor",
-            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
-        },
-        {
-            "icon": "fa fa-pie-chart",
-            "name": "Consectetur adipiscing",
-            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
+            "name": "Effektiv administrasjon",
+            "text": "Fokuset på holdingselskaper lar oss standardiserte og automatisere alle repetetive prosesser"
         }
 
 
     ],
     "Testimonials": [{
             "img": "img/testimonials/01.jpg",
-            "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
+            "text": "\"Å bli kunde av Holdingservice er den beste beslutningen jeg har gjort i hele mitt liv.\"",
             "name": "John Doe"
         },
         {
@@ -105,32 +98,7 @@
         }
     ],
     "Contact": {
-        "address": "4321 California St, San Francisco, CA 12345 ",
-        "phone": "+1 123 456 1234",
-        "email": "info@company.com",
-        "facebook": "fb.com",
-        "twitter": "twitter.com",
-        "youtube": "youtube.com"
-    },
-    "Features": [{
-            "icon": "fa fa-comments-o",
-            "title": "Lorem ipsum",
-            "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
-        },
-        {
-            "icon": "fa fa-bullhorn",
-            "title": "Lorem ipsum",
-            "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
-        },
-        {
-            "icon": "fa fa-group",
-            "title": "Lorem ipsum",
-            "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
-        },
-        {
-            "icon": "fa fa-magic",
-            "title": "Lorem ipsum",
-            "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
-        }
-    ]
+        "email": "post@holdingservice.no",
+        "facebook": "fb.com"
+    }
 }
