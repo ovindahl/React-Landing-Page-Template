@@ -25,16 +25,17 @@ export const Navigation = (props) => {
           id='bs-example-navbar-collapse-1'
         >
           <ul className='nav navbar-nav navbar-right'>
+          <li>
+              <a href='#about' className='page-scroll'>
+                Behov
+              </a>
+            </li>
             <li>
               <a href='#features' className='page-scroll'>
                 Tjenester
               </a>
             </li>
-            <li>
-              <a href='#about' className='page-scroll'>
-                Behov
-              </a>
-            </li>
+            
             <li>
               <a href='#services' className='page-scroll'>
                 Hvorfor oss?
