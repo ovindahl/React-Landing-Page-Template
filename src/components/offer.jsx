@@ -6,7 +6,15 @@ export const Offer = (props) => {
           <div className='col-xs-12 col-md-12'>
             <div className='about-text'>
               <h2>Introduksjonstilbud</h2>
-              <p>{'Alle oppgaver er organisert gjennom vår kundeportal, der du laster opp bilag, generer og oppbevarer styre- og generalforsamlingsprotokoller, og iverksetter aktuelle prosesser i selskapet (eg. kapitalinnskudd, utbytte etc). Du kan også få råd om aktuelle problemstillinger.'}</p>
+              <p>Vi tilbyr nå komplett administrasjon av enkle holdingselskaper* for NOK 5000 per år:</p>
+              <ul>
+                <li>Skattemeldig og årsregnskap utarbeidet av autorisert regnskapsfører</li>
+                <li>Utarbeidelse og oppbevaring av styre- og generalforsamlingsprotokoller</li>
+                <li>Utarbeidelse og oppbevaring av aksjeeierbok</li>
+                <li>Gjennomføring av innskudd og uttak av kapital</li>
+                <li>Vi stifter nytt selskap for deg ved behov.</li>
+              </ul>
+              <p>*) Forutsetter maksimalt 20 bilag per år, samt at selskapet oppfyller Regnskapslovens kriterier for små foretak (balansesum under 35 MNOK). </p>
             </div>
           </div>
         </div>
