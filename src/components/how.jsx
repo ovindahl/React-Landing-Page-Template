@@ -1,7 +1,7 @@
 export const How = (props) => {
   return (
     <div id="about">
-      <div className='container'>
+      <div id="how" className='container'>
         <div className='row'>
           <div className='col-xs-12 col-md-12'>
             <div className='about-text'>

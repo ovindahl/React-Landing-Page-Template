@@ -15,6 +15,7 @@ export const Offer = (props) => {
                 <li>Vi stifter nytt selskap for deg ved behov.</li>
               </ul>
               <p>*) Forutsetter maksimalt 20 bilag per år, samt at selskapet oppfyller Regnskapslovens kriterier for små foretak (balansesum under 35 MNOK). </p>
+              <h3> Andre behov? Ta kontakt på post@holdingservice.no! </h3>
             </div>
           </div>
         </div>

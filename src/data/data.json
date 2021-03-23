@@ -35,8 +35,8 @@
         },
         {
             "icon": "fa fa-cart-arrow-down",
-            "name": "Integrert teknologiplattform",
-            "text": "Vår egenutviklede IT-løsning samler alt på ett sted og integrerer direkte mot Altinn for rapportering"
+            "name": "Smidig teknologiplattform",
+            "text": "Vår integrerte IT-løsning samler alt på ett sted"
         },
         {
             "icon": "fa fa-cloud-download",
@@ -79,22 +79,13 @@
     ],
     "Team": [{
             "img": "img/team/01.jpg",
-            "name": "John Doe",
-            "job": "Director"
+            "name": "Axel Dammann",
+            "job": ""
         },
         {
             "img": "img/team/02.jpg",
-            "name": "Mike Doe",
-            "job": "Senior Designer"
-        }, {
-            "img": "img/team/03.jpg",
-            "name": "Jane Doe",
-            "job": "Senior Designer"
-        },
-        {
-            "img": "img/team/04.jpg",
-            "name": "Karen Doe",
-            "job": "Project Manager"
+            "name": "Øivind Dahl",
+            "job": ""
         }
     ],
     "Contact": {
